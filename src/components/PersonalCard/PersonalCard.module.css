@@ -1,0 +1,23 @@
+/*4. Стилизуем компонент. Нужно создать класс `personalInfoContainer`. Нужно сделать так, 
+чтобы ФИО, квалификация и описание занимали бы половину ширины, а остальное занимала бы картинка. 
+Также, нужно будет стилизовать и изображение - задать ему ширину 100% контейнера, и соотношение 
+сторон 1:1 (aspect-ratio). Это все тоже нужно сделать в виде CSS-модуля.
+*/
+
+
+
+.personalInfoContainer {
+    width: 100%;
+    display: flex;
+}
+.personalDescription {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.personalImage > img {
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1/1;
+ }
+ 
